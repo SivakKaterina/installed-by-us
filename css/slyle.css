@@ -1,0 +1,446 @@
+/*========================================================
+                Fonts
+=========================================================*/
+@font-face {
+  font-family: 'Barlow-Black';
+  src: url('../fonts/Barlow-Black/Barlow-Black.eot');
+  src: local('вє'), url('../fonts/Barlow-Black/Barlow-Black.woff') format('woff'),
+    url('../fonts/Barlow-Black/Barlow-Black.ttf') format('truetype'),
+    url('../fonts/Barlow-Black/Barlow-Black.svg') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow-Bold';
+  src: url('../fonts/Barlow-Bold/Barlow-Bold.eot');
+  src: local('вє'), url('../fonts/Barlow-Bold/Barlow-Bold.woff') format('woff'),
+    url('../fonts/Barlow-Bold/Barlow-Bold.ttf') format('truetype'),
+    url('../fonts/Barlow-Bold/Barlow-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow-Medium';
+  src: url('../fonts/Barlow-Medium/Barlow-Medium.eot');
+  src: local('вє'), url('../fonts/Barlow-Medium/Barlow-Medium.woff') format('woff'),
+    url('../fonts/Barlow-Medium/Barlow-Medium.ttf') format('truetype'),
+    url('../fonts/Barlow-Medium/Barlow-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow-Regular';
+  src: url('../fonts/Barlow-Regular/Barlow-Regular.eot');
+  src: local('вє'), url('../fonts/Barlow-Regular/Barlow-Regular.woff') format('woff'),
+    url('../fonts/Barlow-Regular/Barlow-Regular.ttf') format('truetype'),
+    url('../fonts/Barlow-Regular/Barlow-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow-SemiBold';
+  src: url('../fonts/Barlow-SemiBold/Barlow-SemiBold.eot');
+  src: local('вє'), url('../fonts/Barlow-SemiBold/Barlow-SemiBold.woff') format('woff'),
+    url('../fonts/Barlow-SemiBold/Barlow-SemiBold.ttf') format('truetype'),
+    url('../fonts/Barlow-SemiBold/Barlow-SemiBold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*========================================================
+				RESET
+=========================================================*/
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+abbr,
+address,
+em,
+img,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+caption,
+article,
+aside,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/*========================================================
+                Reusing Styles
+=========================================================*/
+h1 {
+  color: #f7cc18;
+}
+
+h1,
+h2,
+h3,
+a,
+li {
+  text-transform: uppercase;
+}
+
+.imgLogo {
+  height: 70px;
+}
+
+.imgIcon {
+  width: 70px;
+  margin-right: 20px;
+}
+
+
+
+.addressList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.addressList li {
+  display: flex;
+  align-items: center;
+  font-family: "Barlow-SemiBold";
+  font-size: 35px;
+}
+
+.addressList li:not(:last-child) {
+  margin-right: 35px;
+}
+
+
+.addressList li a {
+  display: flex;
+  align-items: center;
+  font-family: "Barlow-SemiBold";
+  font-style: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .logoHeader {
+    margin-right: 20px;
+  }
+
+  .imgLogo {
+    height: 30px;
+  }
+
+  .imgIcon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .addressList li {
+    font-size: 15px;
+  }
+
+  .addressList li a {
+    font-size: 15px;
+  }
+
+
+}
+
+/*========================================================
+	            CONTENT
+=========================================================*/
+.bodyFrame {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/*========================================================
+	            Header
+=========================================================*/
+header {
+  padding: 20px 0;
+  /* position: absolute; */
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 104px;
+  align-items: center;
+}
+
+.span {
+  display: contents;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.lastItem {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 0;
+  }
+
+  .span {
+    font-size: 10px;
+  }
+}
+
+/*========================================================
+	            Section Banner
+=========================================================*/
+.bunTop {
+  display: flex;
+  align-items: center;
+}
+
+.ibg img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.mainText {
+  position: absolute;
+  z-index: 5;
+}
+
+.mainText h1 {
+  font-family: "Barlow-Bold";
+  font-size: 82px;
+}
+
+/*========================================================
+	            Navigation
+=========================================================*/
+.wrapNav {
+  background-color: #f7cc18;
+}
+
+.navigation {}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Barlow-Bold";
+  font-size: 23px;
+  color: black;
+}
+
+.icorArrow {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  width: 20px;
+}
+
+.navigation ul li:not(:first-child) {
+  padding-left: 15px;
+}
+
+.navigation ul li:not(:last-child) {
+  padding-right: 15px;
+}
+
+.navigation ul li:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.navigation ul li:hover .icorArrow {
+  display: block;
+}
+
+/*========================================================
+	            Section Guarantee
+=========================================================*/
+.guarantee {
+  padding: 75px 0;
+  text-align: center;
+
+}
+
+.guarantee h2 {
+  font-family: "Barlow-Black";
+  font-size: 60px;
+}
+
+.guarantee h2 span {
+  color: #f7cc18;
+}
+
+.guarantee h3 {
+  font-family: "Barlow-Regular";
+  font-size: 46px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.guarantee p {
+  font-family: "Barlow-Regular";
+  font-size: 32px;
+  padding-bottom: 55px;
+}
+
+.guarantee ul {
+  display: flex;
+  justify-content: center;
+}
+
+.guarantee ul li:not(:last-child) {
+  margin-right: 120px;
+}
+
+.imgGuarantee {
+  width: 200px;
+}
+
+/*========================================================
+	            Footer
+=========================================================*/
+footer {
+  padding-top: 100px;
+  background-color: black;
+}
+
+.footer {
+
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.wrapLeft {
+  margin-right: 420px;
+}
+
+.wrapLeft .imgLogo,
+.addressList {
+  margin-bottom: 25px;
+}
+
+.navFooter ul li,
+.wrapLeft p {
+  padding: 5px 12px;
+  color: #fff;
+  font-family: "Barlow-Regular";
+  font-size: 30px;
+}
+
+
+.navFooter ul li:hover {
+  border: #f7cc18 solid 2px;
+  color: #f7cc18;
+}
+
+.footerItem {
+  color: #fff;
+}
+
+.navFooter ul {
+  display: flex;
+}
+
+
+
+.copy {
+  text-align: center;
+}
+
+.copy img {
+  width: 830px;
+
+}
+
+.copy p {
+  padding: 35px 0;
+  font-family: "Barlow-Regular";
+  font-size: 31px;
+  color: #fff;
+
+}
