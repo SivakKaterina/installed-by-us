@@ -127,6 +127,10 @@ input[type='submit'] {
 /*========================================================
                 Reusing Styles
 =========================================================*/
+section {
+  padding-bottom: 85px;
+}
+
 h1 {
   color: #f7cc18;
 }
@@ -149,8 +153,6 @@ button {
   margin-right: 20px;
 }
 
-
-
 .addressList {
   display: flex;
   align-items: center;
@@ -167,7 +169,6 @@ button {
 .addressList li:not(:last-child) {
   margin-right: 35px;
 }
-
 
 .addressList li a {
   display: flex;
@@ -202,6 +203,7 @@ button {
 }
 
 .title h2 {
+  margin-bottom: 60px;
   text-align: center;
   font-family: "Barlow-Black";
   font-size: 60px;
@@ -275,6 +277,7 @@ header .container {
 	            Section Banner
 =========================================================*/
 .bunTop {
+  padding-bottom: 0;
   display: flex;
   align-items: center;
 }
@@ -302,10 +305,9 @@ header .container {
 	            Navigation
 =========================================================*/
 .wrapNav {
+  padding-bottom: 0;
   background-color: #f7cc18;
 }
-
-/* .navigation {} */
 
 .navigation ul {
   display: flex;
@@ -357,8 +359,6 @@ header .container {
   flex-wrap: wrap;
   padding-top: 80px;
   margin: -20px -40px;
-
-
 }
 
 .product {
@@ -400,7 +400,6 @@ header .container {
   bottom: 0;
   left: 0;
   font-family: "Barlow-Bold";
-  /* font-size: 30px; */
   font-size: 28px;
   padding: 10px 20px;
 }
@@ -413,12 +412,9 @@ header .container {
   right: 0;
   margin-left: auto;
   font-family: "Barlow-Bold";
-  /* font-size: 28px; */
   font-size: 25px;
   padding: 10px 15px;
 }
-
-
 
 .infoPrice button:focus {
   background-color: red;
@@ -447,25 +443,95 @@ header .container {
 /*========================================================
 	            Our Servise
 =========================================================*/
-.servisInfo {
+.wrapServise {
   display: flex;
+  background-color: #fcf9ea;
 }
 
+.faqContent {
+  width: 50%;
 
+}
+
+.faqContent div {
+  max-width: 639px;
+}
+
+.first,
+.thirt {
+  padding-left: 75px;
+}
+
+.second {
+  margin-left: auto;
+  max-width: 715px;
+  padding-right: 75px;
+}
+
+.faqImg {
+  width: 50%;
+}
+
+.faqImg img {
+  width: 100%;
+  display: block;
+}
+
+.faqContent h3 {
+  display: inline-block;
+  padding-left: 20px;
+  margin: 55px 0 45px 0;
+  border-left: 7px solid #edbf00;
+  font-family: "Barlow-Bold";
+  font-size: 48px;
+}
+
+.infoContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.infoContent img {
+  width: 70px;
+}
+
+.infoContent div {
+  margin-left: 20px;
+}
+
+.infoContent div h4 {
+  font-family: "Barlow-Bold";
+  font-size: 40px;
+  margin-bottom: 13px;
+}
+
+.infoContent div p {
+  font-family: "Barlow-Medium";
+  font-size: 20px;
+
+}
+
+.faqContent a {
+  display: table;
+  margin-left: auto;
+  padding: 10px 29px;
+  font-family: "Barlow-Bold";
+  font-size: 25px;
+  text-transform: none;
+  border: 2px solid black;
+}
 
 /*========================================================
 	            Section Guarantee
 =========================================================*/
 .guarantee {
-  padding: 75px 0;
   text-align: center;
-
 }
 
 .guarantee h3 {
   font-family: "Barlow-Regular";
   font-size: 46px;
-  margin-top: 30px;
   margin-bottom: 25px;
 }
 
@@ -532,8 +598,6 @@ footer {
 .navFooter ul {
   display: flex;
 }
-
-
 
 .copy {
   text-align: center;
