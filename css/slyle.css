@@ -135,7 +135,8 @@ h1,
 h2,
 h3,
 a,
-li {
+li,
+button {
   text-transform: uppercase;
 }
 
@@ -198,6 +199,16 @@ li {
   }
 
 
+}
+
+.title h2 {
+  text-align: center;
+  font-family: "Barlow-Black";
+  font-size: 60px;
+}
+
+.title h2 span {
+  color: #f7cc18;
 }
 
 /*========================================================
@@ -294,7 +305,7 @@ header .container {
   background-color: #f7cc18;
 }
 
-.navigation {}
+/* .navigation {} */
 
 .navigation ul {
   display: flex;
@@ -338,21 +349,117 @@ header .container {
 }
 
 /*========================================================
+	            Products
+=========================================================*/
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  margin: -20px -40px;
+
+
+}
+
+.product {
+  height: 435px;
+  position: relative;
+  border: solid 1px #adadad;
+  padding: 20px;
+  margin: 20px 40px;
+  flex: 0 1 20.333%;
+}
+
+.photoProduct {
+  width: 300px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgLineProduct {
+  display: block;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.infoProduct a h3 {
+  display: block;
+  font-family: "Barlow-Bold";
+  font-size: 21px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.infoPrice span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: "Barlow-Bold";
+  /* font-size: 30px; */
+  font-size: 28px;
+  padding: 10px 20px;
+}
+
+.infoPrice button {
+  position: absolute;
+  border: none;
+  background-color: #edbf00;
+  bottom: 0;
+  right: 0;
+  margin-left: auto;
+  font-family: "Barlow-Bold";
+  /* font-size: 28px; */
+  font-size: 25px;
+  padding: 10px 15px;
+}
+
+
+
+.infoPrice button:focus {
+  background-color: red;
+  color: #fff;
+}
+
+.product:hover {
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border: none;
+}
+
+.product:hover a {
+  color: #575757;
+  text-decoration: revert;
+}
+
+.product:hover button {
+  background-color: red;
+  color: #fff;
+}
+
+.product:hover span {
+  color: red;
+}
+
+/*========================================================
+	            Our Servise
+=========================================================*/
+.servisInfo {
+  display: flex;
+}
+
+
+
+/*========================================================
 	            Section Guarantee
 =========================================================*/
 .guarantee {
   padding: 75px 0;
   text-align: center;
 
-}
-
-.guarantee h2 {
-  font-family: "Barlow-Black";
-  font-size: 60px;
-}
-
-.guarantee h2 span {
-  color: #f7cc18;
 }
 
 .guarantee h3 {
