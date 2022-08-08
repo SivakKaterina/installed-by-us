@@ -145,7 +145,7 @@ button {
 }
 
 .imgLogo {
-  height: 70px;
+  width: 460px;
 }
 
 .imgIcon {
@@ -174,30 +174,25 @@ button {
   display: flex;
   align-items: center;
   font-family: "Barlow-SemiBold";
-  font-style: 48px;
+  font-size: 35px;
 }
 
 @media only screen and (max-width: 767px) {
   .logoHeader {
     margin-right: 20px;
+    position: relative;
   }
 
   .imgLogo {
-    height: 30px;
+    width: 200px;
   }
 
   .imgIcon {
-    height: 30px;
     width: 30px;
   }
 
-  .addressList li {
-    font-size: 15px;
-  }
 
-  .addressList li a {
-    font-size: 15px;
-  }
+
 
 
 }
@@ -239,12 +234,22 @@ button {
 =========================================================*/
 header {
   padding: 20px 0;
-  /* position: absolute; */
+  /* position: fixed; */
+  background-color: #fff;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 50;
 }
+
+/* header::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
 
 header .container {
   display: flex;
@@ -253,25 +258,141 @@ header .container {
   align-items: center;
 }
 
-.span {
-  display: contents;
-  font-size: 20px;
-  text-decoration: none;
-}
-
 .lastItem {
   font-size: 25px;
 }
 
 @media only screen and (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   header {
     padding: 0;
   }
 
-  .span {
-    font-size: 10px;
+  .headerMenu {
+    padding: 30px 20px 10px;
+    display: block;
+    text-align: center;
+    position: fixed;
+    top: 105px;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    font-family: "Barlow-SemiBold";
+    font-size: 20px;
+    z-index: 2;
+    background-color: #fff;
+
   }
+
+  /* .headerMenu * {
+    margin-bottom: 25px;
+  } */
+
+  .headerMenu.active {
+    left: 0;
+    overflow-y: auto;
+    margin: 0 auto;
+  }
+
+  .mobile li:not(:last-child) {
+    margin: 0 auto;
+
+  }
+
+  .mobile li {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+
+  }
+
+  .mobile li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .mobile li a {
+    font-size: 20px;
+  }
+
 }
+
+/*========================================================
+	            Menu Burger
+=========================================================*/
+.burger {
+  display: none;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .mobileNav {
+    display: block;
+  }
+
+  .mobileNav ul li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+
+  .burger span {
+    position: absolute;
+    background-color: #f7cc18;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger:before,
+  .burger:after {
+    content: '';
+    background-color: #f7cc18;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .burger:before {
+    top: 0;
+  }
+
+  .burger:after {
+    bottom: 0;
+  }
+
+  .burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .burger.active span {
+    transform: scale(0);
+  }
+
+}
+
 
 /*========================================================
 	            Section Banner
@@ -293,7 +414,7 @@ header .container {
 
 .mainText {
   position: absolute;
-  z-index: 5;
+  z-index: 1;
 }
 
 .mainText h1 {
@@ -424,6 +545,7 @@ header .container {
 .product:hover {
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
   border: none;
+  cursor: pointer;
 }
 
 .product:hover a {
