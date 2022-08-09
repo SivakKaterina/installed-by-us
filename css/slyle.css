@@ -355,7 +355,6 @@ header .container {
     padding: 30px 20px 10px;
     display: block;
     text-align: center;
-    /* align-items: center; */
     position: fixed;
     top: 75px;
     left: -100%;
@@ -551,8 +550,7 @@ header .container {
 
 .navigation ul li {
   position: relative;
-  /* display: flex; */
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
