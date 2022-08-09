@@ -527,7 +527,8 @@ header .container {
 
 .navigation ul li {
   position: relative;
-  display: flex;
+  /* display: flex; */
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -601,21 +602,26 @@ header .container {
 .products {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 80px;
-  margin: -20px -40px;
+  padding-top: 60px;
+  margin-left: -30px;
+  margin-top: -30px;
+
 }
 
 .product {
+  flex-basis: calc(100% / 4 - 30px);
   height: 435px;
   position: relative;
   border: solid 1px #adadad;
   padding: 20px;
-  margin: 20px 40px;
-  flex: 0 1 20.333%;
+  margin-left: 30px;
+  margin-top: 30px;
+
+
 }
 
-.photoProduct {
-  width: 300px;
+.product .photoProduct {
+  width: 250px;
   margin-bottom: 20px;
   display: block;
   margin-left: auto;
@@ -624,7 +630,7 @@ header .container {
 
 .imgLineProduct {
   display: block;
-  width: 260px;
+  width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -633,7 +639,7 @@ header .container {
 .infoProduct a h3 {
   display: block;
   font-family: "Barlow-Bold";
-  font-size: 21px;
+  font-size: 19px;
   text-align: center;
   margin-top: 20px;
 
@@ -676,13 +682,70 @@ header .container {
   text-decoration: revert;
 }
 
-.product:hover button {
+.button:hover {
   background-color: red;
   color: #fff;
 }
 
-.product:hover span {
-  color: red;
+
+
+
+@media only screen and (max-width: 1500px) {
+  .product {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  .product .photoProduct {
+    width: 300px;
+
+  }
+
+  .imgLineProduct {
+    width: 260px;
+  }
+
+  .infoProduct a h3 {
+    font-size: 21px;
+
+  }
+
+  .infoPrice span {
+
+    font-size: 30px;
+  }
+
+  .infoPrice button {
+
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .products {
+    margin-left: -60px;
+    margin-top: -60px;
+  }
+
+  .product {
+    flex-basis: calc(100% / 2 - 60px);
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+
+
+}
+
+@media only screen and (max-width: 795px) {
+  .products {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  .product:not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 
 /*========================================================
