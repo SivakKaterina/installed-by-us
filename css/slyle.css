@@ -125,11 +125,50 @@ input[type='submit'] {
 }
 
 /*========================================================
+	            CONTENT
+=========================================================*/
+.bodyFrame {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+@media only screen and (max-width: 1760px) {
+  .container {
+    padding: 0 65px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .container {
+    padding: 0 55px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    padding: 0 45px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/*========================================================
                 Reusing Styles
 =========================================================*/
-section {
+/* section {
   padding-bottom: 85px;
-}
+} */
 
 h1 {
   color: #f7cc18;
@@ -156,7 +195,6 @@ button {
 .addressList {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .addressList li {
@@ -177,26 +215,6 @@ button {
   font-size: 35px;
 }
 
-@media only screen and (max-width: 767px) {
-  .logoHeader {
-    margin-right: 20px;
-    position: relative;
-  }
-
-  .imgLogo {
-    width: 200px;
-  }
-
-  .imgIcon {
-    width: 30px;
-  }
-
-
-
-
-
-}
-
 .title h2 {
   margin-bottom: 60px;
   text-align: center;
@@ -208,32 +226,78 @@ button {
   color: #f7cc18;
 }
 
-/*========================================================
-	            CONTENT
-=========================================================*/
-.bodyFrame {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
+@media only screen and (max-width: 1760px) {
+  .imgLogo {
+    width: 390px;
+  }
+
+  .imgIcon {
+    width: 64px;
+  }
+
+  .addressList li {
+
+    font-size: 30px;
+  }
+
+  .addressList li a {
+
+    font-size: 30px;
+  }
+
 }
 
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 75px;
-}
 
-@media only screen and (max-width: 767px) {
-  .container {
-    padding: 0 30px;
+@media only screen and (max-width: 1500px) {
+  .imgLogo {
+    width: 300px;
+  }
+
+  .imgIcon {
+    width: 45px;
+  }
+
+  .addressList li {
+
+    font-size: 25px;
+  }
+
+  .addressList li a {
+
+    font-size: 25px;
   }
 }
+
+@media only screen and (max-width: 1023px) {
+  .imgLogo {
+    width: 200px;
+  }
+
+  .imgIcon {
+    width: 30px;
+  }
+
+  .addressList li:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .addressList li {
+
+    font-size: 20px;
+  }
+
+  .addressList li a {
+
+    font-size: 20px;
+  }
+}
+
 
 /*========================================================
 	            Header
 =========================================================*/
 header {
-  padding: 20px 0;
+  padding: 40px 0;
   /* position: fixed; */
   background-color: #fff;
   width: 100%;
@@ -242,19 +306,9 @@ header {
   z-index: 50;
 }
 
-/* header::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
 header .container {
   display: flex;
   justify-content: space-between;
-  min-height: 104px;
   align-items: center;
 }
 
@@ -262,23 +316,26 @@ header .container {
   font-size: 25px;
 }
 
+@media only screen and (max-width: 1500px) {
+  header {
+    padding: 20px 0;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   body.lock {
     overflow: hidden;
-  }
-
-  header {
-    padding: 0;
   }
 
   .headerMenu {
     padding: 30px 20px 10px;
     display: block;
     text-align: center;
+    /* align-items: center; */
     position: fixed;
-    top: 105px;
+    top: 75px;
     left: -100%;
-    width: 50%;
+    width: 15.9375em;
     height: 100%;
     transition: all 0.3s ease 0s;
     font-family: "Barlow-SemiBold";
@@ -288,30 +345,26 @@ header .container {
 
   }
 
-  /* .headerMenu * {
-    margin-bottom: 25px;
-  } */
-
   .headerMenu.active {
     left: 0;
     overflow-y: auto;
     margin: 0 auto;
   }
 
-  .mobile li:not(:last-child) {
-    margin: 0 auto;
+  .mobile {
+    display: block;
+  }
+
+  .mobile li {
+    margin: 0 auto 25px;
 
   }
 
   .mobile li {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     font-size: 20px;
 
-  }
-
-  .mobile li:not(:last-child) {
-    margin-bottom: 25px;
   }
 
   .mobile li a {
@@ -401,15 +454,12 @@ header .container {
   padding-bottom: 0;
   display: flex;
   align-items: center;
-}
-
-.ibg img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
+  height: 800px;
+  background-image: url('../images/banner-top.jpg');
+  background-size: cover;
   top: 0;
   right: 0;
+  background-position: top right, center;
 }
 
 .mainText {
@@ -420,6 +470,47 @@ header .container {
 .mainText h1 {
   font-family: "Barlow-Bold";
   font-size: 82px;
+}
+
+@media only screen and (max-width: 1760px) {
+  .bunTop {
+    height: 650px;
+  }
+
+  .mainText h1 {
+    font-size: 76px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .bunTop {
+    height: 500px;
+  }
+
+  .mainText h1 {
+    font-size: 65px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .bunTop {
+    height: 450px;
+  }
+
+  .mainText h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .bunTop {
+    height: 350px;
+  }
+
+  .mainText h1 {
+    font-size: 30px;
+  }
 }
 
 /*========================================================
@@ -439,11 +530,11 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding-top: 40px;
-  padding-bottom: 40px;
+  justify-content: center;
+  padding: 40px 15px;
   font-family: "Barlow-Bold";
   font-size: 23px;
+  text-align: center;
   color: black;
 }
 
@@ -454,14 +545,6 @@ header .container {
   width: 20px;
 }
 
-.navigation ul li:not(:first-child) {
-  padding-left: 15px;
-}
-
-.navigation ul li:not(:last-child) {
-  padding-right: 15px;
-}
-
 .navigation ul li:hover {
   background-color: black;
   color: #fff;
@@ -469,6 +552,41 @@ header .container {
 
 .navigation ul li:hover .icorArrow {
   display: block;
+}
+
+@media only screen and (max-width: 1500px) {
+  .navigation ul li {
+
+    padding: 30px 15px;
+    font-size: 12px;
+  }
+
+  .icorArrow {
+    width: 10px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .navigation ul li {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navigation ul {
+    display: block;
+  }
+
+  .navigation ul li {
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+
+  .icorArrow {
+
+    width: 20px;
+  }
 }
 
 /*========================================================
@@ -694,10 +812,10 @@ footer {
   margin-right: 420px;
 }
 
-.wrapLeft .imgLogo,
+/* .wrapLeft .imgLogo,
 .addressList {
   margin-bottom: 25px;
-}
+} */
 
 .navFooter ul li,
 .wrapLeft p {
