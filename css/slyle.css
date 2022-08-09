@@ -533,7 +533,7 @@ header .container {
   justify-content: center;
   padding: 40px 15px;
   font-family: "Barlow-Bold";
-  font-size: 23px;
+  font-size: 23.4px;
   text-align: center;
   color: black;
 }
@@ -554,21 +554,28 @@ header .container {
   display: block;
 }
 
+@media only screen and (max-width: 1760px) {
+  .navigation ul li {
+    font-size: 21.4px;
+  }
+}
+
 @media only screen and (max-width: 1500px) {
   .navigation ul li {
-
     padding: 30px 15px;
-    font-size: 12px;
+    font-size: 17.9px;
   }
+}
 
-  .icorArrow {
-    width: 10px;
+@media only screen and (max-width: 1280px) {
+  .navigation ul li {
+    font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 1023px) {
   .navigation ul li {
-    padding: 20px 10px;
+    padding: 20px 15px;
     font-size: 12px;
   }
 }
@@ -579,13 +586,11 @@ header .container {
   }
 
   .navigation ul li {
-    padding: 20px 10px;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .icorArrow {
-
-    width: 20px;
+    width: 15px;
   }
 }
 
