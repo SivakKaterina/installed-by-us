@@ -645,7 +645,7 @@ header .container {
 
 }
 
-.infoPrice span {
+.click {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -671,6 +671,10 @@ header .container {
   color: #fff;
 }
 
+.infoPrice button:focus .click {
+  color: red;
+}
+
 .product:hover {
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
   border: none;
@@ -681,14 +685,6 @@ header .container {
   color: #575757;
   text-decoration: revert;
 }
-
-.button:hover {
-  background-color: red;
-  color: #fff;
-}
-
-
-
 
 @media only screen and (max-width: 1500px) {
   .product {
