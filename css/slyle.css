@@ -1409,7 +1409,6 @@ footer {
   color: #fff;
 }
 
-@media only screen and (max-width: 1760px) {}
 
 @media only screen and (max-width: 1500px) {
   .footer {
@@ -1428,9 +1427,6 @@ footer {
   }
 
   .footerList,
-  .navFooter ul {}
-
-  .footerList,
   .navFooter ul li {
     font-size: 20px;
     display: block;
@@ -1444,7 +1440,6 @@ footer {
     width: 500px;
   }
 
-  .copy p {}
 }
 
 @media only screen and (max-width: 1023px) {
