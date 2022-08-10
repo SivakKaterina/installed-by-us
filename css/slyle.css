@@ -1305,6 +1305,7 @@ header .container {
 =========================================================*/
 .guarantee {
   text-align: center;
+  padding-bottom: 70px;
 }
 
 .guarantee h3 {
@@ -1316,7 +1317,7 @@ header .container {
 .guarantee p {
   font-family: "Barlow-Regular";
   font-size: 32px;
-  padding-bottom: 55px;
+  margin-bottom: 40px;
 }
 
 .guarantee ul {
@@ -1330,6 +1331,53 @@ header .container {
 
 .imgGuarantee {
   width: 200px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .guarantee {
+    text-align: center;
+    padding-bottom: 55px;
+  }
+
+  .guarantee h3 {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+
+  .guarantee p {
+    font-size: 27px;
+    margin-bottom: 55px;
+  }
+
+  .guarantee ul li:not(:last-child) {
+    margin-right: 85px;
+  }
+
+  .imgGuarantee {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .guarantee h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .guarantee p {
+    font-size: 23px;
+    margin-bottom: 40px;
+  }
+
+  .guarantee ul {
+    display: block;
+
+  }
+
+  .guarantee ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 /*========================================================
@@ -1393,3 +1441,5 @@ footer {
   color: #fff;
 
 }
+
+@media only screen and (max-width: 767px) {}
