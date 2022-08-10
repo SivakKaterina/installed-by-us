@@ -1352,12 +1352,10 @@ footer {
 
 .footer {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 
-.wrapLeft {
-  margin-right: 420px;
-}
 
 .footerList {
   display: flex;
@@ -1378,7 +1376,8 @@ footer {
 .wrapLeft p {
   color: #fff;
   font-family: 'Barlow-Regular';
-  font-size: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
 .navFooter ul li:hover {
@@ -1409,27 +1408,94 @@ footer {
   color: #fff;
 }
 
-
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1300px) {
   .footer {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+    margin-bottom: 60px;
     justify-content: space-between;
   }
 
-  .wrapLeft {
-    margin-right: 20px;
-  }
-
   .wrapLeft p {
-    font-size: 20px;
-    margin: 30px 0 0 0;
+    font-size: 16.5px;
+    margin: 15px 0 0 0;
   }
 
   .footerList,
   .navFooter ul li {
+    font-size: 16.5px;
+  }
+
+  .footerItem {
+
+    margin: 0 0 15px 0;
+  }
+
+  .addressList .footerItem a {
     font-size: 20px;
-    display: block;
+  }
+
+  .addressList .footerItem {
+    font-size: 20px;
+  }
+
+  .copy img {
+    width: 600px;
+  }
+
+  .copy p {
+    padding: 25px 0;
+    font-size: 22.5px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .footer {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  .wrapLeft p {
+    font-size: 16.5px;
+    margin: 15px 0 0 0;
+  }
+
+  .footerList,
+  .navFooter ul li {
+    font-size: 16.5px;
+  }
+
+  .footerItem {
+
+    margin: 0 0 15px 0;
+  }
+
+  .addressList .footerItem a {
+    font-size: 20px;
+  }
+
+  .addressList .footerItem {
+    font-size: 20px;
+  }
+
+  .copy img {
+    width: 600px;
+  }
+
+  .copy p {
+    padding: 25px 0;
+    font-size: 22.5px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .wrapLeft p {
+    font-size: 15px;
+  }
+
+  .footerList,
+  .navFooter ul li {
+    font-size: 15px;
   }
 
   .footerItem {
@@ -1437,12 +1503,17 @@ footer {
   }
 
   .copy img {
-    width: 500px;
+    width: 355px;
+  }
+
+  .copy p {
+    padding: 20px 0;
+    font-size: 13.5px;
   }
 
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 900px) {
   .footer {
     padding-top: 50px;
     margin-bottom: 50px;
@@ -1455,7 +1526,7 @@ footer {
 
   .wrapLeft p {
     font-size: 20px;
-    margin: 30px 0 0 0;
+    margin: 30px 0 15px 0;
   }
 
   .footerList,
@@ -1469,18 +1540,7 @@ footer {
     display: block;
   }
 
-  .footerItem {
-    margin: 0 0 15px 0;
-  }
 
-  .copy img {
-    width: 330px;
-  }
-
-  .copy p {
-    padding: 20px 0;
-    font-size: 17px;
-  }
 }
 
 @media only screen and (max-width: 767px) {
