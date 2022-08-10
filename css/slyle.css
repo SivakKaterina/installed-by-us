@@ -157,12 +157,6 @@ input[type='submit'] {
   }
 }
 
-/* @media only screen and (max-width: 1023px) {
-  .container {
-    padding: 0 30px;
-  }
-} */
-
 /*========================================================
                 Reusing Styles
 =========================================================*/
@@ -197,7 +191,7 @@ button {
 .addressList li {
   display: flex;
   align-items: center;
-  font-family: "Barlow-SemiBold";
+  font-family: 'Barlow-SemiBold';
   font-size: 35px;
 }
 
@@ -208,7 +202,7 @@ button {
 .addressList li a {
   display: flex;
   align-items: center;
-  font-family: "Barlow-SemiBold";
+  font-family: 'Barlow-SemiBold';
   font-size: 35px;
 }
 
@@ -216,7 +210,7 @@ button {
   padding-top: 85px;
   margin-bottom: 60px;
   text-align: center;
-  font-family: "Barlow-Black";
+  font-family: 'Barlow-Black';
   font-size: 70px;
 }
 
@@ -234,12 +228,10 @@ button {
   }
 
   .addressList li {
-
     font-size: 30px;
   }
 
   .addressList li a {
-
     font-size: 30px;
   }
 }
@@ -253,13 +245,15 @@ button {
     width: 45px;
   }
 
-  .addressList li {
+  .imgIcon {
+    margin-right: 15px;
+  }
 
+  .addressList li {
     font-size: 25px;
   }
 
   .addressList li a {
-
     font-size: 25px;
   }
 
@@ -284,12 +278,10 @@ button {
   }
 
   .addressList li {
-
     font-size: 20px;
   }
 
   .addressList li a {
-
     font-size: 20px;
   }
 
@@ -298,7 +290,6 @@ button {
     margin-bottom: 35px;
     font-size: 50px;
   }
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -308,7 +299,6 @@ button {
     font-size: 40px;
   }
 }
-
 
 /*========================================================
 	            Header
@@ -354,11 +344,10 @@ header .container {
     width: 15.9375em;
     height: 100%;
     transition: all 0.3s ease 0s;
-    font-family: "Barlow-SemiBold";
+    font-family: 'Barlow-SemiBold';
     font-size: 20px;
     z-index: 2;
     background-color: #fff;
-
   }
 
   .headerMenu.active {
@@ -373,20 +362,17 @@ header .container {
 
   .mobile li {
     margin: 0 auto 25px;
-
   }
 
   .mobile li {
     text-align: center;
     margin: 0 auto 25px;
     font-size: 20px;
-
   }
 
   .mobile li a {
     font-size: 20px;
   }
-
 }
 
 /*========================================================
@@ -459,9 +445,7 @@ header .container {
   .burger.active span {
     transform: scale(0);
   }
-
 }
-
 
 /*========================================================
 	            Section Banner
@@ -481,7 +465,7 @@ header .container {
 }
 
 .mainText h1 {
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 82px;
 }
 
@@ -516,7 +500,6 @@ header .container {
 }
 
 @media only screen and (max-width: 767px) {
-
   .bunTop {
     height: 350px;
   }
@@ -545,7 +528,7 @@ header .container {
   align-items: center;
   justify-content: center;
   padding: 40px 15px;
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 23.4px;
   text-align: center;
   color: black;
@@ -617,7 +600,6 @@ header .container {
   padding-top: 100px;
   margin-left: -100px;
   margin-top: -100px;
-
 }
 
 .product {
@@ -645,21 +627,19 @@ header .container {
   margin-right: auto;
 }
 
-
 .infoProduct a h3 {
   display: block;
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 19px;
   text-align: center;
   margin-top: 20px;
-
 }
 
 .price {
   position: absolute;
   bottom: 0;
   left: 0;
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 28px;
   padding: 10px 20px;
 }
@@ -675,7 +655,7 @@ header .container {
   bottom: 0;
   right: 0;
   margin-left: auto;
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 25px;
   padding: 10px 15px;
 }
@@ -706,7 +686,6 @@ header .container {
     padding-top: 80px;
     margin-left: -80px;
     margin-top: -80px;
-
   }
 
   .product {
@@ -795,7 +774,6 @@ header .container {
 
   .infoProduct a h3 {
     font-size: 19px;
-
   }
 
   .infoPrice span {
@@ -844,7 +822,6 @@ header .container {
 
   .infoProduct a h3 {
     font-size: 23px;
-
   }
 
   .infoPrice span {
@@ -854,7 +831,6 @@ header .container {
   .infoPrice button {
     font-size: 30px;
   }
-
 }
 
 @media only screen and (max-width: 963px) {
@@ -880,7 +856,6 @@ header .container {
 
   .infoProduct a h3 {
     font-size: 20px;
-
   }
 
   .infoPrice span {
@@ -905,7 +880,6 @@ header .container {
     height: 390px;
   }
 
-
   .photoProduct {
     width: 250px;
   }
@@ -916,7 +890,6 @@ header .container {
 
   .infoProduct a h3 {
     font-size: 17px;
-
   }
 
   .infoPrice span {
@@ -942,7 +915,6 @@ header .container {
     height: 320px;
   }
 
-
   .photoProduct {
     width: 200px;
   }
@@ -953,7 +925,6 @@ header .container {
 
   .infoProduct a h3 {
     font-size: 12px;
-
   }
 
   .infoPrice span {
@@ -975,7 +946,6 @@ header .container {
 
 .faqContent {
   width: 50%;
-
 }
 
 .faqContent div {
@@ -1013,7 +983,7 @@ header .container {
   padding-left: 20px;
   margin: 55px 0 45px 0;
   border-left: 7px solid #edbf00;
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 48px;
 }
 
@@ -1032,22 +1002,21 @@ header .container {
 }
 
 .infoContent div h4 {
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 40px;
   margin-bottom: 13px;
 }
 
 .infoContent div p {
-  font-family: "Barlow-Medium";
+  font-family: 'Barlow-Medium';
   font-size: 20px;
-
 }
 
 .faqContent a {
   display: table;
   margin-left: auto;
   padding: 10px 29px;
-  font-family: "Barlow-Bold";
+  font-family: 'Barlow-Bold';
   font-size: 25px;
   text-transform: none;
   border: 2px solid black;
@@ -1086,7 +1055,6 @@ header .container {
 
   .infoContent div p {
     font-size: 19.5px;
-
   }
 
   .faqContent a {
@@ -1128,7 +1096,6 @@ header .container {
 
   .infoContent div p {
     font-size: 17px;
-
   }
 
   .faqContent a {
@@ -1165,7 +1132,6 @@ header .container {
 
   .infoContent div p {
     font-size: 15px;
-
   }
 
   .faqContent a {
@@ -1208,14 +1174,12 @@ header .container {
     margin-bottom: 30px;
   }
 
-
   .infoContent div {
     margin-left: 20px;
   }
 }
 
 @media only screen and (max-width: 1023px) {
-
   .faqContent div {
     max-width: 550px;
   }
@@ -1273,7 +1237,6 @@ header .container {
     font-size: 30px;
   }
 
-
   div .infoContent {
     margin-bottom: 25px;
   }
@@ -1309,13 +1272,13 @@ header .container {
 }
 
 .guarantee h3 {
-  font-family: "Barlow-Regular";
+  font-family: 'Barlow-Regular';
   font-size: 46px;
   margin-bottom: 25px;
 }
 
 .guarantee p {
-  font-family: "Barlow-Regular";
+  font-family: 'Barlow-Regular';
   font-size: 32px;
   margin-bottom: 40px;
 }
@@ -1371,7 +1334,6 @@ header .container {
 
   .guarantee ul {
     display: block;
-
   }
 
   .guarantee ul li:not(:last-child) {
@@ -1384,12 +1346,11 @@ header .container {
 	            Footer
 =========================================================*/
 footer {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   background-color: black;
 }
 
 .footer {
-
   display: flex;
   margin-bottom: 100px;
 }
@@ -1398,19 +1359,27 @@ footer {
   margin-right: 420px;
 }
 
+.footerList {
+  display: flex;
+}
+
 /* .wrapLeft .imgLogo,
 .addressList {
   margin-bottom: 25px;
 } */
 
-.navFooter ul li,
-.wrapLeft p {
+.navFooter ul li {
   padding: 5px 12px;
   color: #fff;
-  font-family: "Barlow-Regular";
+  font-family: 'Barlow-Regular';
   font-size: 30px;
 }
 
+.wrapLeft p {
+  color: #fff;
+  font-family: 'Barlow-Regular';
+  font-size: 30px;
+}
 
 .navFooter ul li:hover {
   border: #f7cc18 solid 2px;
@@ -1431,15 +1400,115 @@ footer {
 
 .copy img {
   width: 830px;
-
 }
 
 .copy p {
   padding: 35px 0;
-  font-family: "Barlow-Regular";
+  font-family: 'Barlow-Regular';
   font-size: 31px;
   color: #fff;
-
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 1760px) {}
+
+@media only screen and (max-width: 1500px) {
+  .footer {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+
+  .wrapLeft {
+    margin-right: 20px;
+  }
+
+  .wrapLeft p {
+    font-size: 20px;
+    margin: 30px 0 0 0;
+  }
+
+  .footerList,
+  .navFooter ul {}
+
+  .footerList,
+  .navFooter ul li {
+    font-size: 20px;
+    display: block;
+  }
+
+  .footerItem {
+    margin: 0 0 15px 0;
+  }
+
+  .copy img {
+    width: 500px;
+  }
+
+  .copy p {}
+}
+
+@media only screen and (max-width: 1023px) {
+  .footer {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+
+  .wrapLeft {
+    margin-right: 20px;
+  }
+
+  .wrapLeft p {
+    font-size: 20px;
+    margin: 30px 0 0 0;
+  }
+
+  .footerList,
+  .navFooter ul {
+    display: block;
+  }
+
+  .footerList,
+  .navFooter ul li {
+    font-size: 20px;
+    display: block;
+  }
+
+  .footerItem {
+    margin: 0 0 15px 0;
+  }
+
+  .copy img {
+    width: 330px;
+  }
+
+  .copy p {
+    padding: 20px 0;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    display: block;
+  }
+
+  .wrapLeft {
+    margin-right: 0;
+  }
+
+  .footerList,
+  .navFooter ul {
+    display: block;
+  }
+
+  .footerList,
+  .navFooter ul li {
+    font-size: 20px;
+    display: block;
+  }
+
+  .footerItem {
+    margin: 0 0 15px 0;
+  }
+}
