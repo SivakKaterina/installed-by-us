@@ -166,9 +166,6 @@ input[type='submit'] {
 /*========================================================
                 Reusing Styles
 =========================================================*/
-/* section {
-  padding-bottom: 85px;
-} */
 
 h1 {
   color: #f7cc18;
@@ -245,11 +242,7 @@ button {
 
     font-size: 30px;
   }
-
-
-
 }
-
 
 @media only screen and (max-width: 1500px) {
   .imgLogo {
@@ -474,14 +467,11 @@ header .container {
 	            Section Banner
 =========================================================*/
 .bunTop {
-  padding-bottom: 0;
   display: flex;
   align-items: center;
   height: 800px;
   background-image: url('../images/banner-top.jpg');
   background-size: cover;
-  top: 0;
-  right: 0;
   background-position: top right, center;
 }
 
@@ -624,25 +614,23 @@ header .container {
 .products {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
-  margin-left: -30px;
-  margin-top: -30px;
+  padding-top: 100px;
+  margin-left: -100px;
+  margin-top: -100px;
 
 }
 
 .product {
-  flex-basis: calc(100% / 4 - 30px);
+  flex-basis: calc(100% / 4 - 100px);
   height: 435px;
   position: relative;
   border: solid 1px #adadad;
   padding: 20px;
-  margin-left: 30px;
-  margin-top: 30px;
-
-
+  margin-left: 100px;
+  margin-top: 100px;
 }
 
-.product .photoProduct {
+.photoProduct {
   width: 250px;
   margin-bottom: 20px;
   display: block;
@@ -667,7 +655,7 @@ header .container {
 
 }
 
-.click {
+.price {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -676,7 +664,11 @@ header .container {
   padding: 10px 20px;
 }
 
-.infoPrice button {
+.red {
+  color: red;
+}
+
+.order {
   position: absolute;
   border: none;
   background-color: #edbf00;
@@ -688,13 +680,14 @@ header .container {
   padding: 10px 15px;
 }
 
-.infoPrice button:focus {
+/* .order:focus {
   background-color: red;
   color: #fff;
-}
+} */
 
-.infoPrice button:focus .click {
-  color: red;
+.order:hover {
+  background-color: red;
+  color: #fff;
 }
 
 .product:hover {
@@ -708,37 +701,163 @@ header .container {
   text-decoration: revert;
 }
 
-@media only screen and (max-width: 1500px) {
-  .product {
-    flex-basis: calc(100% / 3 - 30px);
+@media only screen and (max-width: 1700px) {
+  .products {
+    padding-top: 80px;
+    margin-left: -80px;
+    margin-top: -80px;
+
   }
 
-  .product .photoProduct {
-    width: 300px;
+  .product {
+    flex-basis: calc(100% / 4 - 80px);
+    height: 390px;
+    margin-left: 80px;
+    margin-top: 80px;
+  }
 
+  .photoProduct {
+    width: 250px;
   }
 
   .imgLineProduct {
-    width: 260px;
+    width: 210px;
   }
 
   .infoProduct a h3 {
-    font-size: 21px;
-
+    font-size: 17px;
   }
 
   .infoPrice span {
+    font-size: 25px;
+  }
 
+  .infoPrice button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1537px) {
+  .products {
+    padding-top: 100px;
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+
+  .product {
+    flex-basis: calc(100% / 3 - 100px);
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 440px;
+  }
+
+  .photoProduct {
+    width: 300px;
+  }
+
+  .imgLineProduct {
+    width: 240px;
+  }
+
+  .infoProduct a h3 {
+    font-size: 20px;
+  }
+
+  .infoPrice span {
     font-size: 30px;
   }
 
   .infoPrice button {
-
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1335px) {
+  .products {
+    margin-left: -80px;
+    margin-top: -80px;
+  }
+
+  .product {
+    flex-basis: calc(100% / 3 - 80px);
+    margin-left: 80px;
+    margin-top: 80px;
+    height: 440px;
+  }
+
+  .photoProduct {
+    width: 280px;
+  }
+
+  .imgLineProduct {
+    width: 230px;
+  }
+
+  .infoProduct a h3 {
+    font-size: 19px;
+
+  }
+
+  .infoPrice span {
+    font-size: 30px;
+  }
+
+  .infoPrice button {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1215px) {
+  .products {
+    margin-left: -60px;
+    margin-top: -60px;
+  }
+
+  .product {
+    flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
+    margin-top: 60px;
+    height: 440px;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  .products {
+    margin-left: -100px;
+    margin-top: -100px;
+  }
+
+  .product {
+    flex-basis: calc(100% / 2 - 100px);
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 490px;
+  }
+
+  .photoProduct {
+    width: 350px;
+  }
+
+  .imgLineProduct {
+    width: 270px;
+  }
+
+  .infoProduct a h3 {
+    font-size: 23px;
+
+  }
+
+  .infoPrice span {
+    font-size: 35px;
+  }
+
+  .infoPrice button {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 943px) {
   .products {
     margin-left: -60px;
     margin-top: -60px;
@@ -748,29 +867,101 @@ header .container {
     flex-basis: calc(100% / 2 - 60px);
     margin-left: 60px;
     margin-top: 60px;
+    height: 450px;
   }
 
-
-}
-
-@media only screen and (max-width: 803px) {
-  .products {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .photoProduct {
     width: 300px;
   }
 
-  .product:not(:last-child) {
-    margin-bottom: 60px;
+  .imgLineProduct {
+    width: 240px;
   }
 
-  .product .photoProduct {
+  .infoProduct a h3 {
+    font-size: 20px;
+
+  }
+
+  .infoPrice span {
+    font-size: 30px;
+  }
+
+  .infoPrice button {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  .products {
+    margin-left: -60px;
+    margin-top: -60px;
+  }
+
+  .product {
+    flex-basis: calc(100% / 2 - 60px);
+    margin-left: 60px;
+    margin-top: 60px;
+    height: 390px;
+  }
+
+
+  .photoProduct {
+    width: 250px;
+  }
+
+  .imgLineProduct {
+    width: 200px;
+  }
+
+  .infoProduct a h3 {
+    font-size: 17px;
+
+  }
+
+  .infoPrice span {
+    font-size: 25px;
+  }
+
+  .infoPrice button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 703px) {
+  .products {
+    padding-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+  }
+
+  .product {
+    margin: 60px 0 0 0;
+    height: 320px;
+  }
+
+
+  .photoProduct {
     width: 200px;
   }
 
   .imgLineProduct {
-    width: 180px;
+    width: 145px;
+  }
+
+  .infoProduct a h3 {
+    font-size: 12px;
+
+  }
+
+  .infoPrice span {
+    font-size: 20px;
+  }
+
+  .infoPrice button {
+    font-size: 15px;
   }
 }
 
