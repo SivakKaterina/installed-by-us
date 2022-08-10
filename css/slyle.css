@@ -153,15 +153,15 @@ input[type='submit'] {
 
 @media only screen and (max-width: 1300px) {
   .container {
-    padding: 0 45px;
+    padding: 0 40px;
   }
 }
 
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
   .container {
     padding: 0 30px;
   }
-}
+} */
 
 /*========================================================
                 Reusing Styles
@@ -217,7 +217,7 @@ button {
   margin-bottom: 60px;
   text-align: center;
   font-family: "Barlow-Black";
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .title h2 span {
@@ -266,7 +266,7 @@ button {
   .title h2 {
     padding-top: 70px;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 65px;
   }
 }
 
@@ -296,7 +296,7 @@ button {
   .title h2 {
     padding-top: 60px;
     margin-bottom: 35px;
-    font-size: 40px;
+    font-size: 50px;
   }
 
 }
@@ -305,7 +305,7 @@ button {
   .title h2 {
     padding-top: 70px;
     margin-bottom: 50px;
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -857,7 +857,7 @@ header .container {
 
 }
 
-@media only screen and (max-width: 943px) {
+@media only screen and (max-width: 963px) {
   .products {
     margin-left: -60px;
     margin-top: -60px;
@@ -892,7 +892,7 @@ header .container {
   }
 }
 
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 823px) {
   .products {
     margin-left: -60px;
     margin-top: -60px;
@@ -928,7 +928,7 @@ header .container {
   }
 }
 
-@media only screen and (max-width: 703px) {
+@media only screen and (max-width: 723px) {
   .products {
     padding-top: 60px;
     display: block;
@@ -988,9 +988,11 @@ header .container {
 }
 
 .second {
-  margin-left: auto;
-  max-width: 715px;
   padding-right: 75px;
+}
+
+.second div {
+  margin-left: auto;
 }
 
 .faqImg {
@@ -1051,9 +1053,9 @@ header .container {
   border: 2px solid black;
 }
 
-@media only screen and (min-width: 1701px) and (max-width: 1800px) {
+@media only screen and (max-width: 1800px) {
   .faqContent div {
-    max-width: 573px;
+    max-width: 620px;
   }
 
   .first,
@@ -1062,14 +1064,12 @@ header .container {
   }
 
   .second {
-    max-width: 639px;
     padding-right: 65px;
   }
 
   .faqContent h3 {
-    margin: 45px 0 40px 0;
-    font-size: 43px;
-    border-left: 5px solid #edbf00;
+    margin: 50px 0 40px 0;
+    font-size: 45px;
   }
 
   .infoContent {
@@ -1077,93 +1077,74 @@ header .container {
   }
 
   .infoContent img {
-    width: 60px;
-  }
-
-  .infoContent div {
-    margin-left: 20px;
+    width: 65px;
   }
 
   .infoContent div h4 {
-    font-size: 28px;
-  }
-
-  .infoContent div p {
-    font-size: 18px;
-
-  }
-
-  .faqContent a {
-    padding: 7px 20px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 1501px)and (max-width: 1700px) {
-  .faqContent div {
-    max-width: 573px;
-  }
-
-  .first,
-  .thirt {
-    padding-left: 65px;
-  }
-
-  .second {
-    max-width: 639px;
-    padding-right: 65px;
-  }
-
-  .faqContent h3 {
-    margin: 45px 0 40px 0;
-    font-size: 43px;
-  }
-
-  .infoContent {
-    margin-bottom: 35px;
-  }
-
-  .infoContent img {
-    width: 60px;
-  }
-
-  .infoContent div {
-    margin-left: 20px;
-  }
-
-  .infoContent div h4 {
-    font-size: 28px;
-  }
-
-  .infoContent div p {
-    font-size: 18px;
-
-  }
-
-  .faqContent a {
-    padding: 7px 20px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
-  .faqContent div {
-    max-width: 485px;
-  }
-
-  .first,
-  .thirt {
-    padding-left: 65px;
-  }
-
-  .second {
-    max-width: 550px;
-    padding-right: 65px;
-  }
-
-  .faqContent h3 {
-    margin: 35px 0 30px 0;
     font-size: 33px;
+  }
+
+  .infoContent div p {
+    font-size: 19.5px;
+
+  }
+
+  .faqContent a {
+    padding: 7px 20px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .faqContent div {
+    max-width: 550px;
+  }
+
+  .first,
+  .thirt {
+    padding-left: 55px;
+  }
+
+  .second {
+    padding-right: 55px;
+  }
+
+  .faqContent h3 {
+    margin: 45px 0 35px 0;
+    font-size: 40px;
+  }
+
+  .infoContent {
+    margin-bottom: 30px;
+  }
+
+  .infoContent img {
+    width: 60px;
+  }
+
+  .infoContent div h4 {
+    font-size: 27px;
+  }
+
+  .infoContent div p {
+    font-size: 17px;
+
+  }
+
+  .faqContent a {
+    padding: 7px 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .faqContent div {
+    max-width: 477px;
+  }
+
+  .faqContent h3 {
+    margin: 40px 0 30px 0;
+    font-size: 35px;
   }
 
   .infoContent {
@@ -1175,7 +1156,7 @@ header .container {
   }
 
   .infoContent div {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   .infoContent div h4 {
@@ -1188,25 +1169,17 @@ header .container {
   }
 
   .faqContent a {
-    padding: 5px 15px;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
   .wrapServise {
     display: block;
   }
 
   .faqContent {
     width: 100%;
-  }
-
-  .faqContent div,
-  .second {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
   }
 
   .faqImg {
@@ -1219,6 +1192,111 @@ header .container {
 
   .wrapServise .mobile {
     display: block;
+  }
+
+  .faqContent div {
+    max-width: 485px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .faqContent:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  div .infoContent {
+    margin-bottom: 30px;
+  }
+
+
+  .infoContent div {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .faqContent div {
+    max-width: 550px;
+  }
+
+  .faqContent:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  .faqContent h3 {
+    padding-left: 20px;
+    margin: 45px 0 35px 0;
+    border-left: 5px solid #edbf00;
+    font-size: 40px;
+  }
+
+  div .infoContent {
+    margin-bottom: 30px;
+  }
+
+  .infoContent img {
+    width: 60px;
+  }
+
+  .infoContent div {
+    margin-left: 20px;
+  }
+
+  .infoContent div h4 {
+    font-size: 27px;
+    margin-bottom: 12px;
+  }
+
+  .infoContent div p {
+    font-size: 17px;
+  }
+
+  .faqContent a {
+    padding: 5px 20px;
+    font-size: 20px;
+    text-transform: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .faqContent {
+    padding-left: 40px;
+  }
+
+  .faqContent div {
+    max-width: 476px;
+  }
+
+  .faqContent h3 {
+    margin: 40px 0 30px 0;
+    font-size: 30px;
+  }
+
+
+  div .infoContent {
+    margin-bottom: 25px;
+  }
+
+  .infoContent img {
+    width: 50px;
+  }
+
+  .infoContent div {
+    margin-left: 15px;
+  }
+
+  .infoContent div h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .infoContent div p {
+    font-size: 15px;
+  }
+
+  .faqContent a {
+    font-size: 15px;
   }
 }
 
