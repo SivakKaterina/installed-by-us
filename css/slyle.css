@@ -1014,6 +1014,10 @@ header .container {
   font-size: 20px;
 }
 
+.faqContent {
+  position: relative;
+}
+
 .faqContent a {
   display: table;
   margin-left: auto;
@@ -1022,6 +1026,23 @@ header .container {
   font-size: 25px;
   text-transform: none;
   border: 2px solid black;
+}
+
+.faqContentImg {
+  position: absolute;
+  right: -10%;
+  bottom: 30%;
+}
+
+.faqContentImgSecond img,
+.faqContentImg img {
+  width: 180px;
+}
+
+.faqContentImgSecond {
+  position: absolute;
+  left: -10%;
+  bottom: 35%;
 }
 
 @media only screen and (max-width: 1800px) {
