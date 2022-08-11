@@ -968,12 +968,30 @@ header .container {
 }
 
 .faqImg {
+  position: relative;
   width: 50%;
 }
 
 .faqImg img {
   width: 100%;
   display: block;
+}
+
+.faqContentImgSecond img,
+.faqContentImg img {
+  width: 180px;
+}
+
+.faqContentImg {
+  position: absolute;
+  left: -9.5%;
+  bottom: 35%;
+}
+
+.faqContentImgSecond {
+  position: absolute;
+  right: -9.5%;
+  bottom: 35%;
 }
 
 .wrapServise .mobile {
@@ -1014,10 +1032,6 @@ header .container {
   font-size: 20px;
 }
 
-.faqContent {
-  position: relative;
-}
-
 .faqContent a {
   display: table;
   margin-left: auto;
@@ -1028,22 +1042,25 @@ header .container {
   border: 2px solid black;
 }
 
-.faqContentImg {
-  position: absolute;
-  right: -10%;
-  bottom: 30%;
+
+@media only screen and (max-width: 1864px) {
+
+  .faqContentImgSecond img,
+  .faqContentImg img {
+    width: 170px;
+  }
+
+  /* .faqContentImg {
+    left: -10%;
+    bottom: 35%;
+  }
+
+  .faqContentImgSecond {
+    right: -10%;
+    bottom: 35%;
+  } */
 }
 
-.faqContentImgSecond img,
-.faqContentImg img {
-  width: 180px;
-}
-
-.faqContentImgSecond {
-  position: absolute;
-  left: -10%;
-  bottom: 35%;
-}
 
 @media only screen and (max-width: 1800px) {
   .faqContent div {
