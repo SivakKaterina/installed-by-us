@@ -941,11 +941,16 @@ header .container {
 	            Our Servise
 =========================================================*/
 .wrapServise {
+  position: relative;
   display: flex;
   background-color: #fcf9ea;
 }
 
 .faqContent {
+  width: 50%;
+}
+
+.faqImg {
   width: 50%;
 }
 
@@ -966,10 +971,7 @@ header .container {
   margin-left: auto;
 }
 
-.faqImg {
-  position: relative;
-  width: 50%;
-}
+
 
 .faqImg img {
   width: 100%;
@@ -978,19 +980,15 @@ header .container {
 
 .faqContentImgSecond img,
 .faqContentImg img {
-  width: 180px;
+  width: 215px;
 }
 
-.faqContentImg {
-  position: absolute;
-  left: -9.5%;
-  bottom: 35%;
-}
-
+.faqContentImg,
 .faqContentImgSecond {
   position: absolute;
-  right: -9.5%;
-  bottom: 35%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wrapServise .mobile {
@@ -1041,26 +1039,6 @@ header .container {
   border: 2px solid black;
 }
 
-
-@media only screen and (max-width: 1864px) {
-
-  .faqContentImgSecond img,
-  .faqContentImg img {
-    width: 170px;
-  }
-
-  /* .faqContentImg {
-    left: -10%;
-    bottom: 35%;
-  }
-
-  .faqContentImgSecond {
-    right: -10%;
-    bottom: 35%;
-  } */
-}
-
-
 @media only screen and (max-width: 1800px) {
   .faqContent div {
     max-width: 620px;
@@ -1099,6 +1077,11 @@ header .container {
   .faqContent a {
     padding: 7px 20px;
     font-size: 22px;
+  }
+
+  .faqContentImgSecond img,
+  .faqContentImg img {
+    width: 199px;
   }
 }
 
@@ -1141,6 +1124,11 @@ header .container {
     padding: 7px 20px;
     font-size: 18px;
   }
+
+  .faqContentImgSecond img,
+  .faqContentImg img {
+    width: 179px;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1176,12 +1164,18 @@ header .container {
   .faqContent a {
     font-size: 15px;
   }
+
+  .faqContentImgSecond img,
+  .faqContentImg img {
+    width: 155px;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .wrapServise {
     display: block;
   }
+
 
   .faqContent {
     width: 100%;
@@ -1215,6 +1209,11 @@ header .container {
 
   .infoContent div {
     margin-left: 20px;
+  }
+
+  .faqContentImgSecond img,
+  .faqContentImg img {
+    width: 155px;
   }
 }
 
